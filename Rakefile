@@ -1,17 +1,32 @@
-require 'rubygems'
-require 'rake'
-require 'echoe'
-
-Echoe.new('spree-zoom-photos', '0.0.1') do |s|
-  s.name = "spree-zoom-photos"
-  s.version = "0.0.2"
-  s.summary = "Zoom in on Photos Extension for Spree"
-  s.author = "eliotsykes"
-  s.description = "Gemified version of Eliot Sykes Zoom Photos."
-  s.email = "N/A"
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |s|
+    s.name = "spree-zoom-photos"
+    s.version = "0.0.2"
+    s.summary = "Zoom in on Photos Extension for Spree"
+    s.author = "eliotsykes"
+    s.description = "Gemified version of Eliot Sykes Zoom Photos."
+    s.email = "N/A"
+  end
+  Jeweler::GemcutterTasks.new
+rescue LoadError
+  puts "Jeweler (or a dependency) not available. Install it with: gem install   jeweler"
 end
 
-Dir["#{File.dirname(__FILE__)}/lib/tasks/*.rake"].sort.each { |ext| load ext }
+#require 'rubygems'
+#require 'rake'
+#require 'echoe'
+#
+#Echoe.new('spree-zoom-photos', '0.0.1') do |s|
+#  s.name = "spree-zoom-photos"
+#  s.version = "0.0.2"
+#  s.summary = "Zoom in on Photos Extension for Spree"
+#  s.author = "eliotsykes"
+#  s.description = "Gemified version of Eliot Sykes Zoom Photos."
+#  s.email = "N/A"
+#end
+#
+#Dir["#{File.dirname(__FILE__)}/lib/tasks/*.rake"].sort.each { |ext| load ext }
 
 
 ## I think this is the one that should be moved to the extension Rakefile template

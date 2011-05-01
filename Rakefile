@@ -4,7 +4,7 @@ require 'echoe'
 
 Echoe.new('spree-zoom-photos', '0.0.1') do |s|
   s.name = "spree-zoom-photos"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
   s.summary = "Zoom in on Photos Extension for Spree"
   s.author = "eliotsykes"
   s.description = "Gemified version of Eliot Sykes Zoom Photos."
